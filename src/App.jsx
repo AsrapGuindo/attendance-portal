@@ -25,23 +25,29 @@ export default function App() {
   );
 
   const handleLogin = () => {
-    setIsAuthenticated(true);
     localStorage.setItem('admin_auth', 'true');
+    setIsAuthenticated(true);
   };
 
   const handleLogout = () => {
-    setIsAuthenticated(false);
     localStorage.removeItem('admin_auth');
+    setIsAuthenticated(false);
   };
-
-  if (!isAuthenticated) {
-    return <Login onLogin={handleLogin} />;
-  }
 
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Layout onLogout={handleLogout} />}>
+        {/* Public Route */}
+        <Route 
+          path="/login" 
+          element={!isAuthenticated ? <Login onLogin={handleLogin} /> : <Navigate to="/" />} 
+        />
+
+        {/* Protected Routes */}
+        <Route 
+          path="/" 
+          element={isAuthenticated ? <Layout onLogout={handleLogout} /> : <Navigate to="/login" />}
+        >
           <Route index element={<Dashboard />} />
           <Route path="attendance" element={<Attendance />} />
           <Route path="students" element={<Students />} />
@@ -58,10 +64,10 @@ export default function App() {
           <Route path="manage/missed-events" element={<MissedEvents />} />
           <Route path="manage/feedback" element={<Feedback />} />
           <Route path="manage/audit-logs" element={<AuditLogs />} />
-          
-          {/* Redirect any unknown route to dashboard */}
-          <Route path="*" element={<Navigate to="/" />} />
         </Route>
+
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate to={isAuthenticated ? "/" : "/login"} />} />
       </Routes>
     </Router>
   );
