@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { MapPin, Plus, Trash2, X, Search, Navigation, Edit3, Clock, Target, ChevronRight } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/geofence.php";
+const API = "http://3.27.150.44/APIs/geofence.php";
 
 export default function Geofence() {
   const [list, setList] = useState([]);
