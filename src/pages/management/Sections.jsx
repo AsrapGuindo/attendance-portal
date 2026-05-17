@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Trash2, Edit2, X, Layers } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/sections.php";
+const API = "http://3.27.150.44/APIs/sections.php";
 
 export default function Sections() {
   const [list, setList] = useState([]);
