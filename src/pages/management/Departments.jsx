@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Trash2, Edit2, X, Landmark } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/departments.php";
+const API = "http://3.27.150.44/APIs/departments.php";
 
 export default function Departments() {
   const [list, setList] = useState([]);
