@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { CalendarDays, Plus, Trash2, MapPin, Search, X, Clock, AlignLeft, Edit3, Calendar as CalendarIcon, CheckCircle2, XCircle } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/school_events.php";
+const API = "http://3.27.150.44/APIs/school_events.php";
 
 export default function SchoolEvents() {
   const [list, setList] = useState([]);
