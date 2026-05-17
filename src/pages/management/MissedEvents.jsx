@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { AlertTriangle, Plus, Trash2, X, Search, Edit3, Receipt, Calendar, CheckCircle2, AlertCircle } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/missed_events.php";
+const API = "http://3.27.150.44/APIs/missed_events.php";
 
 export default function MissedEvents() {
   const [list, setList] = useState([]);
