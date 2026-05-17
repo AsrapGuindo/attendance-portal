@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, Mail, GraduationCap, Building2, Layers, Calendar, User, Trash2 } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/students.php";
+const API = "http://3.27.150.44/APIs/students.php";
 
 export default function Students() {
   const [list, setList] = useState([]);
