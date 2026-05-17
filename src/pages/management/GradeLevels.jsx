@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Trash2, Edit2, X, GraduationCap } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/grade_levels.php";
+const API = "http://3.27.150.44/APIs/grade_levels.php";
 
 export default function GradeLevels() {
   const [list, setList] = useState([]);
