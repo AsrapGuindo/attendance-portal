@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Trash2, Edit2, X, Receipt, CheckCircle2, AlertCircle } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/event_penalties.php";
+const API = "http://3.27.150.44/APIs/event_penalties.php";
 
 export default function EventPenalties() {
   const [list, setList] = useState([]);
