@@ -60,7 +60,7 @@ export default function Layout({ onLogout }) {
     const admin = JSON.parse(localStorage.getItem('adminUser'));
 
     try {
-      const res = await axios.post('http://3.26.148.36/APIs/update_admin.php', {
+      const res = await axios.post('http://3.27.150.44/APIs/update_admin.php', {
         admin_id: admin?.AdminID,
         old_password: formData.oldPass,
         new_username: formData.newUser,
