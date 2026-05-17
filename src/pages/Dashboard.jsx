@@ -63,7 +63,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://3.26.148.36/APIs/dashboard.php");
+        const response = await axios.get("http://3.27.150.44/APIs/dashboard.php");
         if (response.data && response.data.stats) {
           setStats(response.data.stats);
           setChartData(response.data.chart || []);
