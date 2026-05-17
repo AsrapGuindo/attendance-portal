@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { History, Search, Filter, CalendarDays, X } from 'lucide-react'; // Added X for close button
 
-const API_URL = "http://3.26.148.36/APIs/audit_logs.php";
+const API_URL = "http://3.27.150.44/APIs/audit_logs.php";
 
 export default function AuditLogs() {
   const [auditLogs, setAuditLogs] = useState([]);
