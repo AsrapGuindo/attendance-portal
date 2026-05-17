@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { MessageSquare, Trash2, Search, Star, Calendar, User, Info, Filter, XCircle } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/feedback.php";
+const API = "http://3.27.150.44/APIs/feedback.php";
 
 export default function Feedback() {
   const [list, setList] = useState([]);
