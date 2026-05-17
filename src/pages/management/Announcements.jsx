@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Megaphone, Plus, Trash2, Search, X, Edit3, Bell, CheckCircle2, AlertCircle, Clock } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/announcements.php";
+const API = "http://3.27.150.44/APIs/announcements.php";
 
 export default function Announcements() {
   const [list, setList] = useState([]);
