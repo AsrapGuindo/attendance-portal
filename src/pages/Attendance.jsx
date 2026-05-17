@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Edit2, Trash2, X, Filter } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/attendance.php";
+const API = "http://3.27.150.44/APIs/attendance.php";
 
 export default function Attendance() {
   const [list, setList] = useState([]);
