@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FileBarChart, Calendar, Users, CheckCircle, XCircle, Clock, FileSpreadsheet, Filter } from 'lucide-react';
 import axios from 'axios';
 
-const API = "http://3.26.148.36/APIs/reports.php";
+const API = "http://3.27.150.44/APIs/reports.php";
 
 export default function Reports() {
   const [events, setEvents] = useState([]);
