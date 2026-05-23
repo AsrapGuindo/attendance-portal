@@ -99,7 +99,7 @@ export default function Dashboard() {
           path="/students" 
         />
         <StatCard 
-          title="Active Events" 
+          title="Total Events" 
           value={stats.activeEvents} 
           icon={Calendar} 
           color="bg-emerald-500" 
